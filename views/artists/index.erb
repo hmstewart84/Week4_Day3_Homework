@@ -1,0 +1,8 @@
+<h2>Favourite Artists</h2>
+
+<% @artists.each do |artist| %>
+  <b>Name:</b>
+  <p><%= artist.name() %></p>
+  <a href="/artists/<%= artist.id %>">View</a>
+  <hr>
+<% end %>

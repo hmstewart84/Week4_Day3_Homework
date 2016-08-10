@@ -1,0 +1,9 @@
+<h2>Favourite albums</h2>
+
+<% @albums.each do |album| %>
+  <b>Name:</b>
+  <p><%= album.name() %></p>
+  
+  <a href="/albums/<%= album.id %>">View</a>
+  <hr>
+<% end %>
