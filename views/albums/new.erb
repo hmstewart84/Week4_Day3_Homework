@@ -1,11 +1,15 @@
-<h1>Add your album!</h1>
+
+<br></br>
+<div>
+<h1><font size="7">RESTful App</font></h1>
 
 <form action="/albums" method="post">
-  <label for="name">Name:</label>
-  <input type="text" name="name">
+  
+  <p><font size="6"><label for="name">Name:</label></font></label>
+  <input type="text" name="name"></p>
 
 
-  <label for="artist">Select an artist:</label>
+  <font size="6"><label for="artist">Select an artist:</label></font>
     <select name="artist_id">
      
       <% @artists.each do |artist|  %>
@@ -13,6 +17,7 @@
       <% end %>
     </select>
   
-  <input type='submit' value="Submit">
+  <p><font size="6"><input type='submit' value="Add"></font></p>
 </form>
+</div>
 
